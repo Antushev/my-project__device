@@ -83,6 +83,67 @@
 					</li>
 				</ul>
 			</section>
+
+			<section>
+				<h2>Сортировка:</h2>
+
+				<ul>
+					<li>
+						<button type="button">По цене</button>
+					</li>
+					<li>
+						<button type="button">По типу</buttno>
+					</li>
+					<li>
+						<button type="button">По популярности</button>
+					</li>
+					<li>
+						<button type="button" aria-label="По убыванию"></button>
+						<button type="button" aria-label="По возрастанию"></button>
+					</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Фильтр:</h2>
+				
+				<form action="#" method="post">
+					<ul>
+						<li>
+							<h3>Стоимость</h3>
+							<label aria-label="Диапазон цен" min="0" max="100000">
+								<input type="range">
+							</label>
+						</li>
+						<li>
+							<h3>Цвет</h3>	
+							<input id="color-black" name="color-black" type="checkbox">
+							<label for="color-black">Чёрный</label>
+
+							<input id="color-white" name="color-white" type="checkbox">
+							<label for="color-white">Белый</label>
+
+							<input id="color-blue" name="color-blue" type="checkbox">
+							<label for="color-blue">Синий</label>
+
+							<input id="color-red" name="color-red" type="checkbox">
+							<label for="color-red">Красный</label>
+
+							<input id="color-pink" name="color-pink" type="checkbox">
+							<label for="color-pink">Розовый</label>
+						</li>
+						<li>
+							<h3>Bluetooth</h3>
+							<input id="yes-bluetooth" name="bluetooth" type="radio">
+							<label for="yes-bluetooth">Есть</label>
+
+							<input id="no-bluetooth" name="bluetooth" type="radio">
+							<label for="no-bluetooth">Нет</label>
+						</li>
+					</ul>
+					<button type="submit">Показать</button>
+				</form>
+			</section>
 		
 			<section>
 				<ul>
@@ -106,8 +167,30 @@
 						<a href="#">Селфи-падка "Следуй за мной" <span>4900 руб.</span></a>
 						<img src="" alt="Стикер new" title="Стикер new">						
 					</li>
+				</ul>				
+			</section>
+
+			<section>
+				<h2 class="visually-hidden">Блок с пагинацией</h2>
+
+				<ul>
+					<li>
+						<a href="#">Назад</a>
+					</li>
+					<li>
+						<a href="#">1</a>
+					</li>
+					<li>
+						<a href="#">2</a>
+					</li>
+					<li>
+						<a href="#">3</a>
+					</li>
+					<li>
+						<a href="#">Вперёд</a>
+					</li>
 				</ul>
-			</section>		
+			</section>
 		</main>
 
 		<footer>
