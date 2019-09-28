@@ -1,0 +1,141 @@
+/* Colors
+	#f7e296 - цвет фона
+	#f0c52e - цвет кнопок при наведении
+	#464646 - цвет в футере
+	#7e7e7e - цвет иконок в футере
+*/
+
+/* Fonts */
+
+@font-face {
+	font-family: "Gilroy";
+	font-weight: 800;	
+	src: 
+		local("Gilroy"),
+		url("fonts/gilroyextrabold.woff2") format("woff2"),
+		url("fonts/gilroyextrabold.woff") format("woff"),
+		url("fonts/gilroyextrabold.ttf") format("ttf");
+}
+
+@font-face {
+	font-family: "Gilroy";
+	font-weight: 300;
+	src:
+		local("Gilroy"),
+		url("fonts/gilroylight.woff2") format("woff2"),
+		url("fonts/gilroylight.woff") format("woff"),
+		url("fonts/gilroylight.ttf") format("ttf"); 
+}
+
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: "Open Sans", "Tahoma", sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+
+	background-color: #fff;
+}
+
+a {
+	text-decoration: none;
+}
+
+h2{
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-weight: 800;
+	font-size: 47px;
+}
+
+ul, ol {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+address{
+	font-style: normal;
+}
+
+.visually-hidden{
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+}
+
+.button{
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-weight: 800;
+	font-size: 18px;
+	color: #000;
+
+	background-color: #fff;
+	border: none;
+}
+
+.main-header{
+	background-color: #f7e296;	
+}
+
+.main-header a{
+	color: #000;
+}
+
+.list-navigation a {
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-weight: 800;
+	font-size: 18px;
+	color: #000;
+}
+
+.list-navigation-catalog a {
+	font-family: "Open Sans", "Tahoma", sans-serif;
+	font-weight: 300;
+}
+
+.wrapper-slider {
+	background: url('img/top-slider-img.png');
+	background-position: center top;
+}
+
+.list-slide li {
+	font-size: 13px;
+}
+
+.list-slide span {
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-weight: 300;
+	font-size: 36px;
+}
+
+.list-service button:hover {
+	color: #f0c52e;
+
+	background-color: #000;
+}
+
+.main-footer {
+	color: #d3d3d3;
+
+	background-color: #464646;
+}
+
+.main-footer a {
+	color: #fff;
+}
+
+.list-navigation{
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-weight: 800;
+	font-size: 18px;
+	color: #000;
+}
+
+.footer-list-item img{
+	color: #7e7e7e;
+}
+

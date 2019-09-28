@@ -3,15 +3,23 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap&subset=cyrillic" rel="stylesheet">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-		<header>
+		<header class="main-header">
 			<a href="index.html">
-				<img src="img/logo-device.svg" alt="Логотип Device" title="Логотип">
+				<img src="img/logo-device.svg" alt="Логотип Device" width="165" height="35" title="Логотип">
 			</a>
 
 			<section>
-				<ul>
+				<ul class="menu-header-user">
+					<li>
+						<form action="#" method="post">
+							<input name="search" type="text" placeholder="Поиск по сайту" width="165" aria-label="Поиск по сайту">
+						</form>
+					</li>
 					<li>
 						<a href="#">Войти</a>
 					</li>			
@@ -25,11 +33,11 @@
 			</section>
 
 			<section>
-				<nav>
-					<ul>
+				<nav class="main-navigation">
+					<ul class="list-navigation">
 						<li>
 							<a href="#">Каталог товаров</a>
-							<ul>
+							<ul class="list-navigation-catalog">
 								<li>
 									<a href="#">Виртуальная реальность</a>
 								</li>
@@ -67,53 +75,53 @@
 		<main>
 			<!-- Слайдер -->
 
-			<div>
-				<section>
-					<img src="img/slider-1.png">
+			<div class="wrapper-slider">
+				<section class="slide">
+					<img src="img/slider-1.png" width="400" height="490" alt="Палка для селфи">
 
 					<h2>Делай селфи, как Бен Стиллeр!</h2>
 
 					<p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
 
-					<a href="#">Подробнее</a>
+					<a href="#" class="button">Подробнее</a>
 
-					<ul>
+					<ul class="list-slide">
 						<li><span>8,5 м</span> Длина палки</li>
 						<li><span>5 кг</span> Вес палки</li>
 						<li><span>Карбон</span> Материал</li>
 					</ul>
 				</section>
 
-				<section>
-					<img src="img/slider-2.png">
+				<section class="slide">
+					<img src="img/slider-2.png" width="350" height="500">
 		
 					<h2>Худеем правильно</h2>
 
 					<p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
 
-					<a href="#">Подробнее</a>
+					<a href="#" class="button">Подробнее</a>
 
-					<ul>
+					<ul class="list-slide">
 						<li><span>48 часов</span> Без подзарядки</li>
 					</ul>
 				</section>
 
-				<section>
-					<img src="img/slider-3.png">
+				<section class="slide">
+					<img src="img/slider-3.png" width="540" height="320">
 
 					<h2>Пархает как как бабочка, жалит как пчела!</h2>
 
 					<p>Это обычный, на первый взгляд квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
 
-					<a href="#">Подробнее</a>
+					<a href="#" class="button">Подробнее</a>
 
-					<ul>
+					<ul class="list-slide">
 						<li><span>800 м</span> Дальность полета</li>
 						<li><span>50 м</span> Радиус поражения</li>
 					</ul>
 				</section>
 
-				<div>						
+				<div class="list-button">						
 					<button type="button" aria-label="Переключиться на первый слайд"></button>				
 					<button type="button" aria-label="Переключиться на второй слайд"></button>				
 					<button type="button" aria-label="Переключиться на третий слайд"></button>			
@@ -122,58 +130,58 @@
 
 			<!-- Конец слайдера -->
 
-			<section>
-				<ul>
+			<section class="main-popular">
+				<ul class="list-popular">
 					<li>
 						<div>
-							<img src="img/pupular-1.svg" alt="Виртуальная реальность">
+							<img src="img/popular-1.svg" width="100" height="60" alt="Виртуальная реальность">
 						</div>
 						<span>Виртуальная реальность</span>
 					</li>
 					<li>
 						<div>
-							<img src="img/popular-2.svg" alt="Моноподы для селфи">
+							<img src="img/popular-2.svg" width="100" height="120" alt="Моноподы для селфи">
 						</div>
 						<span>Моноподы для селфи</span>
 					</li>
 					<li>
 						<div>
-							<img src="img/popular-3.svg" alt="Экшн-камеры">
+							<img src="img/popular-3.svg" width="85" height="100" alt="Экшн-камеры">
 						</div>
 						<span>Экшн-камеры</span>
 					</li>
 					<li>
 						<div>	
-							<img src="img/popular-4.svg" alt="Фитнес-браслеты">
+							<img src="img/popular-4.svg" width="115" height="75" alt="Фитнес-браслеты">
 						</div>
 						<span>Экшн-камеры</span>
 					</li>
 					<li>
 						<div>
-							<img src="img/popular-5.svg" alt="Умные часы">
+							<img src="img/popular-5.svg" width="60" height="110" alt="Умные часы">
 						</div>
 						<span>Умные часы</span>
 					</li>
 					<li>
 						<div>
-							<img src="img/popular-6.svg" alt="Квадрокоптеры">
+							<img src="img/popular-6.svg" width="140" height="85" alt="Квадрокоптеры">
 						</div>
 						<span>Квадрокоптеры</span>
 					</li>
 				</ul>				
 			</section>
 
-			<div>
+			<div class="wrapper-services">
 				<section>
-					<ul>
+					<ul class="list-service">
 						<li>
-							<button type="button">Доставка</button>
+							<button type="button" class="button">Доставка</button>
 						</li>
 						<li>
-							<button type="button">Гарантия</button>
+							<button type="button" class="button">Гарантия</button>
 						</li>
 						<li>
-							<buttno type="button">Кредит</buttno>
+							<button type="button" class="button">Кредит</buttno>
 						</li>
 					</ul>
 				</section>
@@ -223,7 +231,7 @@
 					<li>Автотрейдинг</li>
 					<li>ЖелДорЭкспедиция</li>
 				</ul>
-				<a  href="#">Подробнее о нас</a>			
+				<a  href="#" class="button">Подробнее о нас</a>			
 			</section>
 
 			<section>
@@ -231,19 +239,19 @@
 
 				<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
 
-				<img src="img/map.png" alt="улица Строителей, 15" title="улица Строителей, 15">
+				<img src="img/map.png" width="570" height="230" alt="улица Строителей, 15" title="улица Строителей, 15">
 
-				<button type="button">Напишите нам</button>
+				<button type="button" class="button">Напишите нам</button>
 			</section>		
 		</main>
 
-		<footer>
+		<footer class="main-footer">
 			<section>
 				<a href="index.html">
-					<img src="img/logo-device.svg" alt="Логотип в футере" title="Логотип в футере">
+					<img src="img/logo-device.svg" width="165" height="35" alt="Логотип в футере" title="Логотип в футере">
 				</a>
 				
-				<ul>
+				<ul class="menu-footer-user">
 					<li>
 						<a href="#">Войти</a>
 					</li>
@@ -260,7 +268,7 @@
 
 				<address>г.Москва, ул.Строителей, 15</address>
 
-				<ul>
+				<ul class="list-navigation">
 					<li>
 						<a href="#">Доставка</a>
 					</li>
@@ -278,7 +286,7 @@
 			</section>
 
 			<section>
-				<ul>
+				<ul class="footer-list-item">
 					<li>
 						<a href="#">
 							<img src="img/fb.svg" alt="Переход на Фейсбук" title="Переход на Фейсбук">
@@ -317,13 +325,13 @@
 				<label>
 					Текст письма: <textarea placeholder="В свободной форме"></textarea>
 				</label>
-				<button type="submit">Отправить</button>
+				<button type="submit" class="button">Отправить</button>
 			</form>
 		</section>
 
 		<section>
 			<button type="button" aria-label="Закрыть карту">X</button>
-			<img src="img/map.png" alt="улица Строителей, 15" title="улица Строителей, 15">
+			<img src="img/map.png" width="570" height="230" alt="улица Строителей, 15" title="улица Строителей, 15">
 		</section>
 	</body>
 </html>
