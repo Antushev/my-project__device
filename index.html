@@ -13,8 +13,8 @@
 				<img src="img/logo-device.svg" alt="Логотип Device" width="165" height="35" title="Логотип">
 			</a>
 
-			<section>
-				<ul class="menu-header-user">
+			<section class="main-header-user">
+				<ul>
 					<li>
 						<form action="#" method="post">
 							<input name="search" type="text" placeholder="Поиск по сайту" width="165" aria-label="Поиск по сайту">
@@ -133,40 +133,52 @@
 			<section class="main-popular">
 				<ul class="list-popular">
 					<li>
-						<div>
-							<img src="img/popular-1.svg" width="100" height="60" alt="Виртуальная реальность">
-						</div>
-						<span>Виртуальная реальность</span>
+						<a href="#">
+							<div>
+								<img src="img/popular-1.svg" width="100" height="60" alt="Виртуальная реальность">
+							</div>
+							<span>Виртуальная реальность</span>
+						</a>
 					</li>
 					<li>
-						<div>
-							<img src="img/popular-2.svg" width="100" height="120" alt="Моноподы для селфи">
-						</div>
-						<span>Моноподы для селфи</span>
+						<a href="#">
+							<div>
+								<img src="img/popular-2.svg" width="100" height="120" alt="Моноподы для селфи">
+							</div>
+							<span>Моноподы для селфи</span>
+						</a>
 					</li>
 					<li>
-						<div>
-							<img src="img/popular-3.svg" width="85" height="100" alt="Экшн-камеры">
-						</div>
-						<span>Экшн-камеры</span>
+						<a href="#">
+							<div>
+								<img src="img/popular-3.svg" width="85" height="100" alt="Экшн-камеры">
+							</div>
+							<span>Экшн-камеры</span>
+						</a>
 					</li>
 					<li>
-						<div>	
-							<img src="img/popular-4.svg" width="115" height="75" alt="Фитнес-браслеты">
-						</div>
-						<span>Экшн-камеры</span>
+						<a href="#">
+							<div>	
+								<img src="img/popular-4.svg" width="115" height="75" alt="Фитнес-браслеты">
+							</div>
+							<span>Экшн-камеры</span>
+						</a>
 					</li>
 					<li>
-						<div>
-							<img src="img/popular-5.svg" width="60" height="110" alt="Умные часы">
-						</div>
-						<span>Умные часы</span>
+						<a href="#">
+							<div>
+								<img src="img/popular-5.svg" width="60" height="110" alt="Умные часы">
+							</div>
+							<span>Умные часы</span>
+						</a>
 					</li>
 					<li>
-						<div>
-							<img src="img/popular-6.svg" width="140" height="85" alt="Квадрокоптеры">
-						</div>
-						<span>Квадрокоптеры</span>
+						<a href="#">
+							<div>
+								<img src="img/popular-6.svg" width="140" height="85" alt="Квадрокоптеры">
+							</div>
+							<span>Квадрокоптеры</span>
+						</a>
 					</li>
 				</ul>				
 			</section>
@@ -248,7 +260,7 @@
 		<footer class="main-footer">
 			<section>
 				<a href="index.html">
-					<img src="img/logo-device.svg" width="165" height="35" alt="Логотип в футере" title="Логотип в футере">
+					<img src="img/logo-device-footer.svg" width="165" height="35" alt="Логотип в футере" title="Логотип в футере">
 				</a>
 				
 				<ul class="menu-footer-user">
@@ -264,11 +276,11 @@
 				</ul>
 			</section>
 
-			<section>
+			<section class="menu-footer-user">
 
 				<address>г.Москва, ул.Строителей, 15</address>
 
-				<ul class="list-navigation">
+				<ul class="list-navigation-footer">
 					<li>
 						<a href="#">Доставка</a>
 					</li>
@@ -312,9 +324,9 @@
 
 		<!-- Popups -->
 
-		<section>
+		<section class="support-popup">
 			<h3 class="visually-hidden">Форма для связи</h3>
-			<button type="button" aria-label="Закрыть форму">X</button>
+			<button class="button-close" type="button" aria-label="Закрыть форму">X</button>
 			<form action="#" method="post">
 				<label>
 					Ваше имя: <input name="first-name" type="text" placeholder="Имя Фамилия">
@@ -329,8 +341,8 @@
 			</form>
 		</section>
 
-		<section>
-			<button type="button" aria-label="Закрыть карту">X</button>
+		<section class="map-popup">
+			<button class="button-close" type="button" aria-label="Закрыть карту">X</button>
 			<img src="img/map.png" width="570" height="230" alt="улица Строителей, 15" title="улица Строителей, 15">
 		</section>
 	</body>

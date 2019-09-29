@@ -12,13 +12,13 @@
 				<img src="img/logo-device.svg" width="165" height="35"  alt="Логотип Device" title="Логотип">
 			</a>		
 
-			<section>
-				<ul class="menu-header-user">
+			<section class="main-header-user">
+				<ul>
 					<li>
 						<a href="#">Валентин Петухов</a>
 					</li>
 					<li>
-						<a href="#">Выйти</a>
+						<a class="exit-user" href="#">Выйти</a>
 					</li>			
 					<li>
 						<a href="#">Сравнить</a>
@@ -70,7 +70,7 @@
 		</header>
 		
 		<main>
-			<section class="inner-slider">
+			<section class="main-header-catalog">
 				<h1>Моноподы для селфи</h1>
 
 				<ul>
@@ -86,8 +86,8 @@
 				</ul>
 			</section>
 
-			<section>
-				<h2>Сортировка:</h2>
+			<section class="main-sort">
+				<h2 class="filter-header">Сортировка:</h2>
 
 				<ul>
 					<li>
@@ -100,14 +100,14 @@
 						<a href="#">По популярности</a>
 					</li>
 					<li>
-						<a href="#" aria-label="По убыванию"></button>
-						<a href="#" aria-label="По возрастанию"></button>
+						<a href="#" aria-label="По убыванию"></a>
+						<a href="#" aria-label="По возрастанию"></a>
 					</li>
 				</ul>
 			</section>
 
-			<section>
-				<h2>Фильтр:</h2>
+			<section class="main-filter">
+				<h2 class="filter-header">Фильтр:</h2>
 				
 				<form action="#" method="post">
 					<ul>
@@ -137,40 +137,40 @@
 							<label for="no-bluetooth">Нет</label>
 						</li>
 					</ul>
-					<button type="submit">Показать</button>
+					<button class="button" type="submit">Показать</button>
 				</form>
 			</section>
 		
-			<section>
+			<section class="main-catalog">
 				<ul>
 					<li>						
-						<img src="img/catalog-item-1.jpg" alt="Люительская селфи-палка" title="Любительская селфи-палка">
+						<img src="img/catalog-item-1.jpg" width="360" height="380" alt="Люительская селфи-палка" title="Любительская селфи-палка">
 						<a href="#">Любительская селфи-палка <span>500 руб.</span></a>						
 					</li>
 
 					<li>					
-						<img src="img/catalog-item-2.jpg" alt="Профессиональная селфи-палка" title="Профессиональная селфи-палка">
+						<img src="img/catalog-item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка" title="Профессиональная селфи-палка">
 						<a href="#">Профессиональная селфи-палка <span>1500 руб.</span></a>
 					</li>	
 
 					<li>
-						<img src="img/catalog-item-3.jpg" alt="Непотопляемая селфи-палка" title="Непотопялемая селфи-палка">
+						<img src="img/catalog-item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка" title="Непотопялемая селфи-палка">
 						<a href="#">Непотопляемая селфи-палка <span>2500 руб.</span></a>
 					</li>
 
 					<li>
-						<img src="img/catalog-item-4.jpg" alt="Селфи-палка Следуй за мной" title="Селфи-палка Следуй за мной">
+						<img src="img/catalog-item-4.jpg" width="360" height="380" alt="Селфи-палка Следуй за мной" title="Селфи-палка Следуй за мной">
 						<a href="#">Селфи-падка "Следуй за мной" <span>4900 руб.</span></a>
-						<img src="" alt="Стикер new" title="Стикер new">						
+						<img src="img/new.png" width="32" height="14" alt="Стикер new" title="Стикер new">						
 					</li>
 				</ul>				
 			</section>
 
-			<section>
+			<section class="main-pagination">
 				<h2 class="visually-hidden">Блок с пагинацией</h2>
 
 				<ul>
-					<li>
+					<li  class="button-paginate">
 						<a href="#">Назад</a>
 					</li>
 					<li>
@@ -182,7 +182,7 @@
 					<li>
 						<a href="#">3</a>
 					</li>
-					<li>
+					<li class="button-paginate">
 						<a href="#">Вперёд</a>
 					</li>
 				</ul>
@@ -192,7 +192,7 @@
 		<footer class="main-footer">
 			<section>
 				<a href="index.html">
-					<img src="" alt="Логотип в футере" title="Логотип в футере">
+					<img src="img/logo-device-footer.svg" width="165" height="35" alt="Логотип в футере" title="Логотип в футере">
 				</a>
 
 				<ul class="menu-footer-user">
@@ -211,11 +211,11 @@
 				</ul>
 			</section>
 
-			<section>
+			<section class="menu-footer-user">
 
 				<address>г.Москва, ул.Строителей, 15</address>
 
-				<ul class="list-navigation">
+				<ul class="list-navigation-footer">
 					<li>
 						<a href="#">Доставка</a>
 					</li>
