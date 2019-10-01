@@ -42,29 +42,20 @@ a {
 	text-decoration: none;
 }
 
-h1, h2 {
-	font-family: "Gilroy", "Arial", sans-serif;
-	font-weight: 800;
-	font-size: 47px;
-}
-
-ul, ol {
-	margin: 0;
-	padding: 0;
-
-	list-style: none;
-}
-
-address {
-	font-style: normal;
-}
-
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active) {
 	position: absolute;
-	clip: rect(0 0 0 0);
+
 	width: 1px;
 	height: 1px;
 	margin: -1px;
+	border: 0;
+	padding: 0;
+
+	white-space: nowrap;
+
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
 }
 
 .button {
@@ -85,6 +76,12 @@ address {
 	border-radius: 50%;
 }
 
+.main-header-2{
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-weight: 800;
+	font-size: 47px;
+}
+
 /* index.html */
 
 .main-header {
@@ -103,16 +100,46 @@ address {
 	color: #b8a974;
 }
 
-.main-header .exit-user{
+.main-header .exit-user {
 	color: #ac9e69;
 }
 
-.list-navigation > li > a {
+.list-user{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+
+.list-user-footer{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.list-user-footer a {
+	font-size: 14px;
+}
+
+
+.list-navigation {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.list-navigation-item > a {
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: 800;
 	font-size: 18px;
 	color: #000;
 	text-transform: uppercase;
+}
+
+.list-navigation-catalog{
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
 .list-navigation-catalog a {
@@ -136,10 +163,22 @@ address {
 	font-size: 36px;
 }
 
+.list-service {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
 .list-service button:hover {
 	color: #f0c52e;
 
 	background-color: #000;
+}
+
+.list-partner {
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
 .list-popular span{
@@ -157,6 +196,9 @@ address {
 	background-color: #f0c52e;
 }
 
+.main-about-us h2{
+}
+
 .main-footer {
 	color: #d3d3d3;
 
@@ -167,17 +209,15 @@ address {
 	color: #c8c8c8;
 }
 
-.main-footer address{
+.main-navigation-footer address {
 	color: #c8c8c8;
+	font-style: normal;
 }
 
-.footer-list-item img {
-	color: #7e7e7e;
-}
-
-.menu-footer-user address,
-.menu-footer-user a {
-	font-size: 14px;
+.list-social-footer {
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
 .menu-footer-user a:hover {
@@ -186,6 +226,12 @@ address {
 
 .menu-footer-user a:active {
 	color: #7e7e7e;
+}
+
+.list-navigation-footer {
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
 .list-navigation-footer a {
@@ -225,22 +271,24 @@ address {
 	color: #e5e5e5;
 }
 
-.main-sort h2,
-.main-filter h2 {
-	font-size: 18px;
-	text-transform: uppercase;
+.main-header-catalog h1 {
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-weight: 800;
+	font-size: 47px;
 }
 
+.list-bread {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
 
-
-.main-filter h3 {
+.main-sort h2,
+.main-filter h2 {
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: 800;
 	font-size: 18px;
-}
-
-.main-filter label {
-	font-size: 14px;
+	text-transform: uppercase;
 }
 
 .main-sort a {
@@ -256,6 +304,28 @@ address {
 	color: #222222;
 }	
 
+.list-sort {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.main-filter h3 {
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-weight: 800;
+	font-size: 18px;
+}
+
+.main-filter label {
+	font-size: 14px;
+}
+
+.list-filter{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
 .main-catalog a {
 	color: #000;
 	font-family: "Gilroy", "Arial", sans-serif;
@@ -263,7 +333,13 @@ address {
 	font-size: 18px;
 }
 
-.main-catalog a span {
+.list-catalog{ 
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.list-catalog span {
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: 300;
 	font-size: 16px;
@@ -271,6 +347,12 @@ address {
 
 .main-pagination {
 	background-color: #ebebeb;
+}
+
+.list-pagination{
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
  
 .main-pagination a { 
