@@ -8,34 +8,35 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-		<header class="main-header">
-			<a href="index.html">
-				<img src="img/logo-device.svg" alt="Логотип Device" width="165" height="35" title="Логотип">
-			</a>
+		<header class="main-header container">
+			<div>
+				<a href="index.html">
+					<img src="img/logo-device.svg" alt="Логотип Device" width="165" height="40" title="Логотип">
+				</a>
+			</div>
 
 			<section class="main-header-user">
 				<ul class="list-user">
-					<li>
-						<form action="#" method="post">
-							<input name="search" type="text" placeholder="Поиск по сайту" width="165" aria-label="Поиск по сайту">
+					<li class="list-user-item">
+						<form class="form-list-user" action="#" method="post">
+							<label class="visually-hidden" for="search-input" aria-label="Поиск по сайту">Поиск по сайту</label>
+							<input id="serach-input" name="search" type="text" placeholder="Поиск по сайту" width="165" aria-label="Поиск по сайту">
 						</form>
-					</li>
-					<li>
-						<a href="#">Войти</a>
+					</li class="list-user-item">
+					<li class="list-user-item">
+						<a class="list-user-link user-link" href="#">Войти</a>
 					</li>			
-					<li>
-						<a href="#">Сравнить</a>
-					</li>
-					<li>
-						<a href="#">Корзина</a>
+					<li class="list-user-item">
+						<a class="list-user-link compare-link" href="#">Сравнить</a>
+						<a class="list-user-link cart-link" href="#">Корзина</a>
 					</li>
 				</ul>
 			</section>
 
-			<section>
+			<section class="main-navigation">
 				<nav>
 					<ul class="list-navigation">
-						<li class="list-navigation-item">
+						<li class="list-navigation-item item-catalog">
 							<a class="link-navigation-bold" href="#">Каталог товаров</a>
 							<ul class="list-navigation-catalog">
 								<li>
@@ -58,13 +59,11 @@
 								</li>
 							</ul>
 						</li>
-						<li class="list-navigation-item">
+						<li class="list-navigation-item item-info-product">
 							<a class="link-navigation-bold" href="#">Доставка</a>
-						</li>
-						<li class="list-navigation-item">
 							<a class="link-navigation-bold" href="#">Гарантия</a>
 						</li>
-						<li class="list-navigation-item">
+						<li class="list-navigation-item item-info-us">
 							<a class="link-navigation-bold" href="#">Контакты</a>
 						</li>
 					</ul>
