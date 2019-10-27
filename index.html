@@ -20,10 +20,14 @@
 			<section class="main-header-user">
 				<ul class="list-user">
 					<li class="list-user-item">
-						<form class="form-list-user" action="#" method="post">
-							<label class="visually-hidden" for="search-input" aria-label="Поиск по сайту">Поиск по сайту</label>
-							<input class="search-input-form" id="serach-input" name="search" type="text" placeholder="Поиск по сайту" width="165" aria-label="Поиск по сайту">
-						</form>
+						<div class="form-block-user">
+							<form class="form-list-user" action="#" method="post">
+								<label class="visually-hidden" for="search-input" aria-label="Поиск по сайту">Поиск по сайту</label>
+								<input class="search-input-form" id="serach-input" name="search" type="text" placeholder="Поиск по сайту" width="165" aria-label="Поиск по сайту">
+								<button class="button-search-form" type="submit">Найти</button>
+								<div class="form-line-bottom"></div>
+							</form>
+						</div> 
 					</li>
 					<li class="list-user-item">
 						<a class="link-user-list user-link" href="#">
@@ -107,12 +111,15 @@
 			<!-- Слайдер -->
 
 			<div class="wrapper-slider container">
-				<section>
-					<section class="slide">
+				<section class="slides-block">					
+					<input class="slider-radio-paginate slide-1" id="slide-1" type="radio" name="slide" checked>	
+					<input class="slider-radio-paginate slide-2" id="slide-2" type="radio" name="slide">
+					<input class="slider-radio-paginate slide-3" id="slide-3" type="radio" name="slide">
+					<section class="slide slide-block-1">
 						<div class="wrapper-block-slider block-img">
 							<img src="img/slider-1.png" width="400" height="490" alt="Палка для селфи">
 						</div>
-						<div class="wrapper-block-slider wrapper-block-text-slider">
+						<div class="wrapper-block-slider wrapper-text-slider wrapper-text-slider-1">
 							<h2 class="main-header-2 slide-header">Делай селфи,<br> как Бен Стиллeр!</h2>
 
 							<p class="slide-text">Самая длинная палка для селфи доступна в нашем магазине. <br> Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
@@ -126,18 +133,18 @@
 							</ul>
 						</div>
 					</section>
-
-					<section class="slide">
+					
+					<section class="slide slide-block-2">
 						<div class="wrapper-block-slider block-img">
 							<img src="img/slider-2.png" width="350" height="500">
 						</div>
 						
-						<div class="wrapper-block-slider">
-							<h2 class="main-header-2">Худеем правильно</h2>
+						<div class="wrapper-block-slider wrapper-text-slider wrapper-text-slider-2">
+							<h2 class="main-header-2 slide-header">Худеем<br> правильно</h2>
 
-							<p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+							<p class="slide-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
 
-							<a href="#" class="button">Подробнее</a>
+							<a href="#" class="button slide-button">Подробнее</a>
 
 							<ul class="list-slide">
 								<li><span>48 часов</span> Без подзарядки</li>
@@ -145,17 +152,17 @@
 						</div>
 					</section>
 
-					<section class="slide">
+					<section class="slide slide-block-3">
 						<div class="wrapper-block-slider block-img">
 							<img src="img/slider-3.png" width="540" height="320">
 						</div>
 						
-						<div class="wrapper-block-slider">
-							<h2 class="main-header-2">Пархает как как бабочка, жалит как пчела!</h2>
+						<div class="wrapper-block-slider wrapper-text-slider wrapper-text-slider-3">
+							<h2 class="main-header-2 slide-header">Пархает как как бабочка, жалит как пчела!</h2>
 
-							<p>Это обычный, на первый взгляд квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+							<p class="slide-text">Это обычный, на первый взгляд квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
 
-							<a href="#" class="button">Подробнее</a>
+							<a href="#" class="button slide-button">Подробнее</a>
 
 							<ul class="list-slide">
 								<li><span>800 м</span> Дальность полета</li>
@@ -164,11 +171,11 @@
 						</div>
 					</section>
 
-					<div class="list-button-slider">						
-						<button class="slider-button-paginate" type="button" aria-label="Переключиться на первый слайд"></button>				
-						<button class="slider-button-paginate slide-active" type="button" aria-label="Переключиться на второй слайд"></button>				
-						<button class="slider-button-paginate" type="button" aria-label="Переключиться на третий слайд"></button>			
-					</div>
+					<div class="list-button-slider">											
+						<label class="slider-button-paginate" for="slide-1" aria-label="Переключиться на первый слайд"></label>										
+						<label class="slider-button-paginate" for="slide-2" aria-label="Переключиться на второй слайд"></label>						
+						<label class="slider-button-paginate" for="slide-3" aria-label="Переключиться на третий слайд"></label>
+					</div>					
 				</section>
 			</div>
 
@@ -301,24 +308,32 @@
 					<section class="main-service-menu">
 						<ul class="list-service">
 							<li class="item-list-service">
-								<button type="button" class="button button-service">Доставка</button>
+								<label class="label-service" for="service-1">
+									<button type="button" class="button button-service">Доставка</button>
+								</label>
 							</li>
 							<li class="item-list-service">
-								<button type="button" class="button button-service">Гарантия</button>
+								<label class="label-service" for="service-2">
+									<button type="button" class="button button-service">Гарантия</button>
+								</label>
 							</li>
 							<li class="item-list-service">
-								<button type="button" class="button button-service">Кредит</button>
+								<label class="label-service" for="service-3">
+									<button type="button" class="button button-service">Кредит</button>
+								</label>
 							</li>
 						</ul>
 					</section>
-
+					
+					<input class="input-service" id="service-1" name="service" type="radio" checked>
 					<section class="service-info info-delivery">
 						<div class="service-block-info">
 							<h2 class="main-header-2 header-service">Доставка</h2>
 							<p class="service-info-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж</p>
 						</div>
 					</section>
-
+					
+					<input class="input-service" id="service-2" name="service" type="radio">
 					<section class="service-info info-warranty">
 						<div class="service-block-info">
 							<h2 class="main-header-2 header-service">Гарантия</h2>
@@ -326,11 +341,12 @@
 							</p>
 						</div>
 					</section>
-
+					
+					<input class="input-service" id="service-3" name="service" type="radio">
 					<section class="service-info info-credit">
 						<div class="service-block-info">
 							<h2 class="main-header-2 header-service">Кредит</h2>
-							<p class="service-info-tex">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется</p>
+							<p class="service-info-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется</p>
 						</div>
 					</section>
 				</div>
@@ -338,16 +354,16 @@
 
 			<section class="main-partner container">
 				<ul class="list-partner">
-					<li class="item-list-partner">
+					<li class="item-list-partner partner-1">
 						<img src="img/logo-1.png" width="260" height="100" alt="Партнёр Dji">
 					</li>
-					<li class="item-list-partner">
+					<li class="item-list-partner partner-2">
 						<img src="img/logo-2.png" width="260" height="100" alt="Партнёр Sp Gadgets">
 					</li>
-					<li class="item-list-partner">
+					<li class="item-list-partner partner-3">
 						<img src="img/logo-3.png" width="260"  height="100" alt="Партнёр GoPro">
 					</li>
-					<li class="item-list-partner">
+					<li class="item-list-partner partner-4">
 						<img src="img/logo-4.png" width="260" height="100" alt="Партнёр Vive">
 					</li>
 				</ul>
@@ -463,7 +479,7 @@
 
 		<!-- Popups -->
 
-		<section class="support-popup">
+		<section class="support-popup popup">
 			<h3 class="visually-hidden">Форма для связи</h3>
 			<button class="button-close button-close-support" type="button" aria-label="Закрыть форму">
 				<svg class="button-close-image" xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55"><path d="M27.5 0C12.312 0 0 12.312 0 27.5S12.312 55 27.5 55 55 42.688 55 27.5 42.688 0 27.5 0zm11.476 37.072l-1.486 1.426-9.99-9.574-9.987 9.574-1.488-1.426 9.988-9.573-9.987-9.573 1.487-1.425 9.987 9.573 9.988-9.573 1.487 1.425-9.989 9.574 9.99 9.572z"/></svg>				
@@ -485,7 +501,7 @@
 			</form>
 		</section>
 
-		<section class="map-popup">
+		<section class="map-popup popup">
 			<button class="button-close button-close-map" type="button" aria-label="Закрыть карту">
 				<svg class="button-close-image" xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55"><path d="M27.5 0C12.312 0 0 12.312 0 27.5S12.312 55 27.5 55 55 42.688 55 27.5 42.688 0 27.5 0zm11.476 37.072l-1.486 1.426-9.99-9.574-9.987 9.574-1.488-1.426 9.988-9.573-9.987-9.573 1.487-1.425 9.987 9.573 9.988-9.573 1.487 1.425-9.989 9.574 9.99 9.572z"/></svg>				
 			</button>

@@ -20,10 +20,12 @@
 			<section class="main-header-user">
 				<ul class="list-user">
 					<li class="list-user-item">
-						<form class="form-list-user" action="#" method="post">
+						<div class="form-block-user">
 							<label class="visually-hidden" for="search-input" aria-label="Поиск по сайту">Поиск по сайту</label>
 							<input class="search-input-form" id="serach-input" name="search" type="text" placeholder="Поиск по сайту" width="165" aria-label="Поиск по сайту">
-						</form>
+							<button class="button-search-form" type="submit">Найти</button>
+							<div class="form-line-bottom"></div>						
+						</div> 
 					</li>
 					<li class="list-user-item">	
 						<a class="link-user-list user-link" href="#">
@@ -158,6 +160,29 @@
 					<section class="main-filter">			
 						<form action="https://echo.htmlacademy.ru" method="post">
 							<ul class="list-filter">
+								<li class="item-list-filter">
+									<div class="range-form">
+										<div class="range-number-line"></div>
+										<div class="range-controls">
+											<div class="range-control">
+												<div class="range-circle">
+													<div class="range-min-circle"></div>
+												</div>
+												<label class="range-label" for="input-min">
+													<input class="range-input" name="input-min" placeholder="от 100">
+												</label>
+											</div>
+											<div class="range-control">
+												<div class="range-circle">
+													<div class="range-min-circle"></div>										
+												</div>
+												<label class="range-label" type="text" for="input-max">
+													<input class="range-input" type="text" name="input-max" placeholder="до 5000">
+												</label>
+											</div>
+										</div>
+									</div>
+								</li>
 								<li class="item-list-filter">
 									<h3 class="header-form-filter">Цвет</h3>
 									<ul class="list-filter-detail">

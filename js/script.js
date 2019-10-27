@@ -6,6 +6,9 @@ let supportPopup = document.querySelector(".support-popup");
 let buttonOpenMap = document.querySelector(".button-open-map");
 let buttonCloseMap = document.querySelector(".button-close-map");
 let mapPopup = document.querySelector(".map-popup");
+let listButtonSlider = document.querySelector(".list-button-slider");
+let slidesButton = document.querySelectorAll(".slider-button-paginate");
+let slidesBlock = document.querySelectorAll(".slides-block");
 
 catalogLink.addEventListener("mouseover", function () {
 	catalogListAll.classList.add("show-catalog-all");
@@ -15,21 +18,35 @@ catalogLink.addEventListener("mouseout", function () {
 	catalogListAll.classList.remove("show-catalog-all");
 });
 
-buttonWriteUs.addEventListener("click", function () {
-	supportPopup.classList.add("show-support-popup");
-});
+if (buttonWriteUs) {
+	buttonWriteUs.addEventListener("click", function () {
+		supportPopup.classList.remove("hide-popup");
+		supportPopup.classList.add("show-popup");
+	});	
+}
 
-buttonCloseWriteUs.addEventListener("click", function () {
-	supportPopup.classList.remove("show-support-popup");
-});
+if (buttonCloseWriteUs) {
+	buttonCloseWriteUs.addEventListener("click", function () {
+		supportPopup.classList.remove("show-popup");
+		supportPopup.classList.add("hide-popup");
+	});
+}	
 
-buttonOpenMap.addEventListener("click", function (evt) {
-	evt.preventDefault();
-	mapPopup.classList.add("show-map-popup");
-});
+if (buttonOpenMap) {
+	buttonOpenMap.addEventListener("click", function (evt) {
+		evt.preventDefault();
+		mapPopup.classList.remove("hide-popup");
+		mapPopup.classList.add("show-popup");
+	});
+}
 
-buttonCloseMap.addEventListener("click", function() {
-	mapPopup.classList.remove("show-map-popup");
-});
+if (buttonCloseMap) {
+	buttonCloseMap.addEventListener("click", function() {
+		mapPopup.classList.remove("show-popup");
+		mapPopup.classList.add("hide-popup");
+	});
+}
+
+
 
 
