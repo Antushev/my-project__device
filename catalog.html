@@ -3,12 +3,13 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>Моноподы для селфи</title>
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap&subset=cyrillic" rel="stylesheet">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body class="inner-page">
-		<header class="main-header container">
+		<header class="main-header main-header-inner container">
 			<div class="link-block-header">
 				<a class="link-logo-header" href="index.html">
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 164 35">
@@ -22,7 +23,7 @@
 					<li class="list-user-item">
 						<div class="form-block-user">
 							<label class="visually-hidden" for="search-input" aria-label="Поиск по сайту">Поиск по сайту</label>
-							<input class="search-input-form" id="serach-input" name="search" type="text" placeholder="Поиск по сайту" width="165" aria-label="Поиск по сайту">
+							<input class="search-input-form" id="search-input" name="search" type="text" placeholder="Поиск по сайту" aria-label="Поиск по сайту">
 							<button class="button-search-form" type="submit">Найти</button>
 							<div class="form-line-bottom"></div>						
 						</div> 
@@ -161,6 +162,7 @@
 						<form action="https://echo.htmlacademy.ru" method="post">
 							<ul class="list-filter">
 								<li class="item-list-filter">
+									<h3 class="header-form-filter">Стоимость</h3>
 									<div class="range-form">
 										<div class="range-number-line"></div>
 										<div class="range-controls">
@@ -169,15 +171,15 @@
 													<div class="range-min-circle"></div>
 												</div>
 												<label class="range-label" for="input-min">
-													<input class="range-input" name="input-min" placeholder="от 100">
+													<input class="range-input" id="input-min" placeholder="от 100">
 												</label>
 											</div>
 											<div class="range-control">
 												<div class="range-circle">
 													<div class="range-min-circle"></div>										
 												</div>
-												<label class="range-label" type="text" for="input-max">
-													<input class="range-input" type="text" name="input-max" placeholder="до 5000">
+												<label class="range-label" for="input-max">
+													<input class="range-input" type="text" id="input-max" placeholder="до 5000">
 												</label>
 											</div>
 										</div>
@@ -245,7 +247,7 @@
 
 							<li class="item-list-catalog">			
 								<img class="image-catalog" src="img/catalog-item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка" title="Профессиональная селфи-палка">
-								<a class="link-list-catalog" href="#">Профессиональная селфи-палка <span class="price-catalog">1500 руб.</span></a>
+								<a class="link-list-catalog" href="#">Профессиональная<br> селфи-палка <span class="price-catalog">1 500 руб.</span></a>
 								<div class="item-hover-info">
 									<ul class="list-item-hover">
 										<li class="item-hover">
@@ -260,7 +262,7 @@
 
 							<li class="item-list-catalog">
 								<img class="image-catalog" src="img/catalog-item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка" title="Непотопялемая селфи-палка">
-								<a class="link-list-catalog" href="#">Непотопляемая селфи-палка<span class="price-catalog">2500 руб.</span></a>
+								<a class="link-list-catalog" href="#">Непотопляемая селфи-палка<span class="price-catalog">2 500 руб.</span></a>
 								<div class="item-hover-info">
 									<ul class="list-item-hover">
 										<li class="item-hover">
@@ -273,10 +275,9 @@
 								</div>
 							</li>
 
-							<li class="item-list-catalog">			
+							<li class="item-list-catalog item-sticker-new">			
 								<img class="image-catalog" src="img/catalog-item-4.jpg" width="360" height="380" alt="Селфи-палка Следуй за мной" title="Селфи-палка Следуй за мной">
-								<a class="link-list-catalog" href="#">Селфи-палка "Следуй за мной" <span class="price-catalog">4900 руб.</span></a>
-								<img class="sticker-new-catalog" src="img/new.png" width="32" height="14" alt="Стикер new" title="Стикер new">
+								<a class="link-list-catalog" href="#">Селфи-палка "Следуй за<br> мной" <span class="price-catalog">4 900 руб.</span></a>
 								<div class="item-hover-info">
 									<ul class="list-item-hover">
 										<li class="item-hover">
@@ -332,20 +333,20 @@
 						<li class="item-list-user user-footer">
 							<a class="link-user-footer" href="#">
 								<svg class="icon-user-image" xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12"><path d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/></svg>
-								Валентин Петухов
+								<span class="link-user-span">Валентин Петухов</span>
 							</a>
 							<a class="link-footer-exit" href="#">Выйти</a>					
 						</li>
 						<li class="item-list-user compare-footer">
 							<a class="link-user-footer" href="#">
 								<svg class="icon-user-image" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><path d="M8 2h1.984v8H8zM0 3h1.984v7H0zM4 0h2v10H4z"/></svg>
-								Сравнить
+								<span class="link-user-span">Сравнить</span>
 							</a>
 						</li>
 						<li class="item-list-user cart-footer">
 							<a class="link-user-footer" href="#">
 								<svg class="icon-user-image" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><path d="M11.864 3.017a.429.429 0 0 0-.327-.154H9.225V4.09c0 .563-.484 1.022-1.08 1.022-.594 0-1.078-.458-1.078-1.022V2.863H4.909V4.09c0 .563-.485 1.022-1.08 1.022-.595 0-1.078-.458-1.078-1.022V2.863H.438a.43.43 0 0 0-.327.154.472.472 0 0 0-.108.358l.776 7.134c.015.806.642 1.455 1.411 1.455h7.595c.77 0 1.396-.649 1.411-1.455l.776-7.134a.476.476 0 0 0-.108-.358z"/><path d="M3.829 4.499c.239 0 .433-.184.433-.409V1.84c0-.632.672-1.022 1.295-1.022h1.079c.655 0 1.078.401 1.078 1.022v2.25c0 .225.194.409.431.409.239 0 .433-.184.433-.409V1.84C8.577.773 7.761 0 6.636 0H5.557c-1.19 0-2.159.826-2.159 1.84v2.25c0 .225.194.409.431.409z"/></svg>
-								Корзина
+								<span class="link-user-span">Корзина</span>
 							</a>
 						</li>
 					</ul>

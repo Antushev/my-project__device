@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>Device</title>
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap&subset=cyrillic" rel="stylesheet">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
@@ -23,7 +24,7 @@
 						<div class="form-block-user">
 							<form class="form-list-user" action="#" method="post">
 								<label class="visually-hidden" for="search-input" aria-label="Поиск по сайту">Поиск по сайту</label>
-								<input class="search-input-form" id="serach-input" name="search" type="text" placeholder="Поиск по сайту" width="165" aria-label="Поиск по сайту">
+								<input class="search-input-form" id="search-input" name="search" type="text" placeholder="Поиск по сайту" aria-label="Поиск по сайту">
 								<button class="button-search-form" type="submit">Найти</button>
 								<div class="form-line-bottom"></div>
 							</form>
@@ -127,9 +128,9 @@
 							<a href="#" class="button slide-button">Подробнее</a>
 
 							<ul class="list-slide">
-								<li><span>8,5 м</span> Длина палки</li>
-								<li><span>5 кг</span> Вес палки</li>
-								<li><span>Карбон</span> Материал</li>
+								<li class="item-list-slide"><span class="list-slide-span">8,5 м</span> Длина палки</li>
+								<li class="item-list-slide"><span class="list-slide-span">5 кг</span> Вес палки</li>
+								<li class="item-list-slide"><span class="list-slide-span">Карбон</span> Материал</li>
 							</ul>
 						</div>
 					</section>
@@ -147,7 +148,7 @@
 							<a href="#" class="button slide-button">Подробнее</a>
 
 							<ul class="list-slide">
-								<li><span>48 часов</span> Без подзарядки</li>
+								<li class="item-list-slide"><span class="list-slide-span">48 часов</span> Без подзарядки</li>
 							</ul>
 						</div>
 					</section>
@@ -165,8 +166,8 @@
 							<a href="#" class="button slide-button">Подробнее</a>
 
 							<ul class="list-slide">
-								<li><span>800 м</span> Дальность полета</li>
-								<li><span>50 м</span> Радиус поражения</li>
+								<li class="item-list-slide"><span class="list-slide-span">800 м</span> Дальность полета</li>
+								<li class="item-list-slide"><span class="list-slide-span">50 м</span> Радиус поражения</li>
 							</ul>
 						</div>
 					</section>
@@ -194,7 +195,7 @@
 					<li>
 						<a href="catalog.html">
 							<div class="block-image-popular">
-								<svg class="popular-image" xmlns="http://www.w3.org/2000/svg" width="86" height="117" viewBox="0 0 86 117"><g><path d="M82.821 4.011H3.33A3.188 3.188 0 0 0 .142 7.199v46.413a3.187 3.187 0 0 0 3.188 3.189h79.492a3.188 3.188 0 0 0 3.189-3.189V7.199a3.189 3.189 0 0 0-3.19-3.188zM8.392 37.236h-.226a3.19 3.19 0 0 1-3.189-3.189v-7.283a3.188 3.188 0 0 1 3.189-3.188h.226v13.66zm61.231 15.172H13.341V8.402h56.282v44.006zM78.4 34.552c-2.289 0-4.146-1.855-4.146-4.147s1.856-4.147 4.146-4.147a4.146 4.146 0 1 1 0 8.294zM31.497 0h23.157v2.758H31.497zM46.608 64.861v-2.973h8.046V59.13H31.498v2.758h8.045v35.246a6.068 6.068 0 0 0-3.635 5.559V117h14.335v-14.307a6.062 6.062 0 0 0-3.636-5.557v-27.99h4.796l5.051 1.213v-6.711l-5.051 1.213h-4.795z"/></g></svg>
+								<svg class="popular-image monopods-for-selfies" xmlns="http://www.w3.org/2000/svg" width="86" height="117" viewBox="0 0 86 117"><g><path d="M82.821 4.011H3.33A3.188 3.188 0 0 0 .142 7.199v46.413a3.187 3.187 0 0 0 3.188 3.189h79.492a3.188 3.188 0 0 0 3.189-3.189V7.199a3.189 3.189 0 0 0-3.19-3.188zM8.392 37.236h-.226a3.19 3.19 0 0 1-3.189-3.189v-7.283a3.188 3.188 0 0 1 3.189-3.188h.226v13.66zm61.231 15.172H13.341V8.402h56.282v44.006zM78.4 34.552c-2.289 0-4.146-1.855-4.146-4.147s1.856-4.147 4.146-4.147a4.146 4.146 0 1 1 0 8.294zM31.497 0h23.157v2.758H31.497zM46.608 64.861v-2.973h8.046V59.13H31.498v2.758h8.045v35.246a6.068 6.068 0 0 0-3.635 5.559V117h14.335v-14.307a6.062 6.062 0 0 0-3.636-5.557v-27.99h4.796l5.051 1.213v-6.711l-5.051 1.213h-4.795z"/></g></svg>
 							</div>
 							<span class="text-popular">Моноподы для селфи</span>
 						</a>
@@ -307,20 +308,17 @@
 				<div class="main-service container">
 					<section class="main-service-menu">
 						<ul class="list-service">
-							<li class="item-list-service">
-								<label class="label-service" for="service-1">
-									<button type="button" class="button button-service">Доставка</button>
-								</label>
+							<li class="item-list-service active-list-service">
+								<button type="button" class="button button-service">Доставка</button>
+								<label class="label-service" for="service-1"></label>
 							</li>
 							<li class="item-list-service">
-								<label class="label-service" for="service-2">
-									<button type="button" class="button button-service">Гарантия</button>
-								</label>
+								<button type="button" class="button button-service">Гарантия</button>
+								<label class="label-service" for="service-2"></label>
 							</li>
 							<li class="item-list-service">
-								<label class="label-service" for="service-3">
-									<button type="button" class="button button-service">Кредит</button>
-								</label>
+								<button type="button" class="button button-service">Кредит</button>
+								<label class="label-service" for="service-3"></label>
 							</li>
 						</ul>
 					</section>
@@ -394,7 +392,7 @@
 						<img class="map-info-device" src="img/map.png" width="570" height="230" alt="улица Строителей, 15" title="улица Строителей, 15">
 					</a>
 
-					<button type="button" class="button button-info-device button-write-us">Напишите нам</button>
+					<a class="button button-info-device button-write-us">Напишите нам</a>
 				</section>
 			</div>	
 		</main>
@@ -406,25 +404,25 @@
 						<svg class="img-icon-device" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 164 35">
 						  <path d="m0.35 0.7v33.6h13.532a15.723 15.723 0 0 0 11.72-4.824 16.464 16.464 0 0 0 4.712-11.976 16.465 16.465 0 0 0-4.712-11.976 15.723 15.723 0 0 0-11.72-4.824zm7.733 26.208v-18.819h5.8a8.648 8.648 0 0 1 6.5 2.568 9.412 9.412 0 0 1 2.489 6.84 9.41 9.41 0 0 1-2.489 6.84 8.646 8.646 0 0 1-6.5 2.568h-5.8zm34.8-5.952h12.082v-7.3h-12.086v-5.567h13.291v-7.389h-21.024v33.6h21.265v-7.392h-13.532v-5.952zm36.343 13.344 11.019-33.6h-8.458l-7.491 24.72-7.491-24.72h-8.457l11.019 33.6zm14.4 0h7.733v-33.6h-7.733zm38.615-1.416a15.514 15.514 0 0 0 6.041-5.688l-6.67-3.84a7.488 7.488 0 0 1-3.165 3.024 9.874 9.874 0 0 1-4.664 1.1 9.594 9.594 0 0 1-7.177-2.736 9.907 9.907 0 0 1-2.682-7.248 9.908 9.908 0 0 1 2.682-7.248 9.594 9.594 0 0 1 7.177-2.736 9.914 9.914 0 0 1 4.64 1.08 7.6 7.6 0 0 1 3.189 3.048l6.67-3.84a15.881 15.881 0 0 0-6.09-5.688 17.419 17.419 0 0 0-8.409-2.088 17.12 17.12 0 0 0-17.592 17.472 17.12 17.12 0 0 0 17.589 17.476 17.519 17.519 0 0 0 8.458-2.088zm17.881-11.928h12.082v-7.3h-12.085v-5.567h13.29v-7.389h-21.022v33.6h21.264v-7.392h-13.532v-5.952z"/>
 						</svg>
-					</a>
+					</a>		
 					
 					<ul class="list-user-footer">
 						<li class="item-list-user user-footer">
 							<a class="link-user-footer" href="#">
 								<svg class="icon-user-image" xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12"><path d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/></svg>
-								Войти
+								<span class="link-user-span">Войти</span>
 							</a>
 						</li>
 						<li class="item-list-user compare-footer">
 							<a class="link-user-footer" href="#">
 								<svg class="icon-user-image" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><path d="M8 2h1.984v8H8zM0 3h1.984v7H0zM4 0h2v10H4z"/></svg>
-								Сравнить
+								<span class="link-user-span">Сравнить</span>
 							</a>
 						</li>
 						<li class="item-list-user cart-footer">
 							<a class="link-user-footer" href="#">
 								<svg class="icon-user-image" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><path d="M11.864 3.017a.429.429 0 0 0-.327-.154H9.225V4.09c0 .563-.484 1.022-1.08 1.022-.594 0-1.078-.458-1.078-1.022V2.863H4.909V4.09c0 .563-.485 1.022-1.08 1.022-.595 0-1.078-.458-1.078-1.022V2.863H.438a.43.43 0 0 0-.327.154.472.472 0 0 0-.108.358l.776 7.134c.015.806.642 1.455 1.411 1.455h7.595c.77 0 1.396-.649 1.411-1.455l.776-7.134a.476.476 0 0 0-.108-.358z"/><path d="M3.829 4.499c.239 0 .433-.184.433-.409V1.84c0-.632.672-1.022 1.295-1.022h1.079c.655 0 1.078.401 1.078 1.022v2.25c0 .225.194.409.431.409.239 0 .433-.184.433-.409V1.84C8.577.773 7.761 0 6.636 0H5.557c-1.19 0-2.159.826-2.159 1.84v2.25c0 .225.194.409.431.409z"/></svg>
-								Корзина
+								<span class="link-user-span">Корзина</span>
 							</a>
 						</li>
 					</ul>
@@ -484,20 +482,20 @@
 			<button class="button-close button-close-support" type="button" aria-label="Закрыть форму">
 				<svg class="button-close-image" xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55"><path d="M27.5 0C12.312 0 0 12.312 0 27.5S12.312 55 27.5 55 55 42.688 55 27.5 42.688 0 27.5 0zm11.476 37.072l-1.486 1.426-9.99-9.574-9.987 9.574-1.488-1.426 9.988-9.573-9.987-9.573 1.487-1.425 9.987 9.573 9.988-9.573 1.487 1.425-9.989 9.574 9.99 9.572z"/></svg>				
 			</button>
-			<form action="#" method="post">
+			<form action="https://echo.htmlacademy.ru" method="post">
 				<ul class="list-form-support">
 					<li class="item-support">
 						<label class="label-support" for="first-name">Ваше имя:</label>
-						<input class="input-support" id="first-name" name="first-name" type="text" placeholder="Имя Фамилия">
+						<input class="input-support input-name field-support" id="first-name" name="first-name" type="text" placeholder="Имя Фамилия">
 					</li>
 					<li class="item-support">
 						<label class="label-support" for="email">Ваш e-mail:</label>
-						<input class="input-support" id="email" name="email" type="text" placeholder="email@example.com">
+						<input class="input-support input-email field-support" id="email" name="email" type="text" placeholder="email@example.com">
 					</li>
 				</ul>
 				<label class="label-support textarea-support" for="text-form">Текст письма:</label>
-				<textarea class="form-textarea" id="text-form" placeholder="В свободной форме"></textarea>
-				<button class="button button-support" type="submit" class="button">Отправить</button>
+				<textarea class="form-textarea textarea-text field-support" id="text-form" name="text" placeholder="В свободной форме"></textarea>
+				<button class="button button-support" type="submit">Отправить</button>
 			</form>
 		</section>
 
