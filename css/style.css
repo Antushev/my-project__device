@@ -1701,7 +1701,7 @@ img {
 	width: 100%;
 	margin-top: 50px;
 
-	background-image: linear-gradient(to right,#dcdcdc 0,#dcdcdc 380px,#ebebeb 380px,#ebebeb);
+	background-image: linear-gradient(to right,#dcdcdc 0,#dcdcdc 380px,#ebebeb 380px,#ebebeb 100%);
 
 }
 
@@ -1937,6 +1937,7 @@ img {
 }
 
 .range-control {
+	position: relative;
 	z-index: 1000;
 
 	display: -webkit-box;
@@ -1970,6 +1971,11 @@ img {
 	-webkit-box-shadow: 0px 1px 5px #dadada;
 
 	        box-shadow: 0px 1px 5px #dadada;
+}
+
+.range-circle:active {
+	width: 21px;
+	height: 21px;
 }
 
 .range-min-circle {
