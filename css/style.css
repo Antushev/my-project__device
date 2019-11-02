@@ -900,9 +900,6 @@ img {
 }
 
 .label-service {
-
-	z-index: 1000;
-
 	display: block;
 }
 
@@ -1974,8 +1971,7 @@ img {
 }
 
 .range-circle:active {
-	width: 21px;
-	height: 21px;
+	transform: scale(1.1);
 }
 
 .range-min-circle {

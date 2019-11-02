@@ -6,9 +6,39 @@ let supportPopup = document.querySelector(".support-popup");
 let buttonOpenMap = document.querySelector(".button-open-map");
 let buttonCloseMap = document.querySelector(".button-close-map");
 let mapPopup = document.querySelector(".map-popup");
-let inputName = document.querySelector('.input-name');
-let inputEmail = document.querySelector('.input-email');
-let buttonSupport = document.querySelector('.button-support');
+let inputName = document.querySelector(".input-name");
+let inputEmail = document.querySelector(".input-email");
+let buttonSupport = document.querySelector(".button-support");
+let blockServiceDelivery = document.querySelector(".service-button-1");
+let blockServiceWarranty = document.querySelector(".service-button-2");
+let blockServiceCredit = document.querySelector(".service-button-3");
+let itemServiceDelivery = document.querySelector(".service-item-1");
+let itemServiceWarranty = document.querySelector(".service-item-2");
+let itemServiceCredit = document.querySelector(".service-item-3");
+
+if (itemServiceDelivery) {
+	itemServiceDelivery.addEventListener("click", function (evt) {
+		itemServiceWarranty.classList.remove("active-list-service");
+		itemServiceCredit.classList.remove("active-list-service");
+		itemServiceDelivery.classList.add("active-list-service");
+	});
+}
+
+if (itemServiceWarranty) {
+	itemServiceWarranty.addEventListener("click", function (evt) {
+		itemServiceDelivery.classList.remove("active-list-service");
+		itemServiceCredit.classList.remove("active-list-service");
+		itemServiceWarranty.classList.add("active-list-service");
+	});
+}
+
+if (itemServiceCredit) {
+	itemServiceCredit.addEventListener("click", function (evt) {
+		itemServiceDelivery.classList.remove("active-list-service");
+		itemServiceWarranty.classList.remove("active-list-service");
+		itemServiceCredit.classList.add("active-list-service");
+	});
+}
 
 catalogLink.addEventListener("mouseover", function () {
 	catalogListAll.classList.add("show-catalog-all");
