@@ -167,18 +167,18 @@
 										<div class="range-number-line"></div>
 										<div class="range-controls">
 											<div class="range-control">
-												<div class="range-circle">
+												<div class="range-circle range-circle-min">
 													<div class="range-min-circle"></div>
 												</div>
-												<label class="range-label" for="input-min">
-													<input class="range-input" id="input-min" placeholder="от 100">
+												<label class="range-label range-label-min" for="input-min">
+													<input class="range-input" id="input-min" placeholder="от 0">
 												</label>
 											</div>
 											<div class="range-control">
-												<div class="range-circle">
+												<div class="range-circle range-circle-max">
 													<div class="range-min-circle"></div>										
 												</div>
-												<label class="range-label" for="input-max">
+												<label class="range-label range-label-max" for="input-max">
 													<input class="range-input" type="text" id="input-max" placeholder="до 5000">
 												</label>
 											</div>
@@ -186,7 +186,7 @@
 									</div>
 								</li>
 								<li class="item-list-filter">
-									<h3 class="header-form-filter">Цвет</h3>
+									<h3 class="header-form-filter header-color">Цвет</h3>
 									<ul class="list-filter-detail">
 										<li class="item-detail">				
 											<input class="input-form-filter" id="color-black" name="color-black" type="checkbox">
@@ -210,9 +210,9 @@
 										</li>
 									</ul>
 								</li>
-								<li class="item-list-filter">
+								<li class="item-list-filter item-list-bluetooth">
 									<h3 class="header-form-filter">Bluetooth</h3>
-									<ul class="list-filter-detail">
+									<ul class="list-filter-detail list-filter-bluetooth">
 										<li class="item-detail">			
 											<input class="input-form-filter" id="form-bluetooth-yes" name="bluetooth" value="bluetooth-yes" type="radio" checked>	
 											<label class="label-form-radio" for="form-bluetooth-yes">Есть</label>
@@ -247,7 +247,7 @@
 
 							<li class="item-list-catalog">			
 								<img class="image-catalog" src="img/catalog-item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка" title="Профессиональная селфи-палка">
-								<a class="link-list-catalog" href="#">Профессиональная<br> селфи-палка <span class="price-catalog">1 500 руб.</span></a>
+								<a class="link-list-catalog" href="#"><span class="link-list-selfie">Профессиональная<br> селфи-палка</span><span class="price-catalog">1 500 руб.</span></a>
 								<div class="item-hover-info">
 									<ul class="list-item-hover">
 										<li class="item-hover">
@@ -262,7 +262,7 @@
 
 							<li class="item-list-catalog">
 								<img class="image-catalog" src="img/catalog-item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка" title="Непотопялемая селфи-палка">
-								<a class="link-list-catalog" href="#">Непотопляемая селфи-палка<span class="price-catalog">2 500 руб.</span></a>
+								<a class="link-list-catalog link-list-unsinkable" href="#">Непотопляемая селфи-палка<span class="price-catalog">2 500 руб.</span></a>
 								<div class="item-hover-info">
 									<ul class="list-item-hover">
 										<li class="item-hover">
@@ -277,7 +277,7 @@
 
 							<li class="item-list-catalog item-sticker-new">			
 								<img class="image-catalog" src="img/catalog-item-4.jpg" width="360" height="380" alt="Селфи-палка Следуй за мной" title="Селфи-палка Следуй за мной">
-								<a class="link-list-catalog" href="#">Селфи-палка "Следуй за<br> мной" <span class="price-catalog">4 900 руб.</span></a>
+								<a class="link-list-catalog link-list-me" href="#">Селфи-палка «‎Следуй за<br> мной»‎ <span class="price-catalog price-catalog-me">4 900 руб.</span></a>
 								<div class="item-hover-info">
 									<ul class="list-item-hover">
 										<li class="item-hover">
@@ -295,7 +295,7 @@
 
 							<ul class="list-pagination">
 								<li class="item-list-pagination button-paginate">
-									<a class="link-pagination link-paginate" href="#">Назад</a>
+									<a class="link-pagination link-paginate link-prev" href="#">Назад</a>
 								</li>
 								<li class="item-list-pagination">
 									<ul class="list-detail-pagination">
@@ -306,12 +306,12 @@
 											<a class="link-pagination link-detail-pagination" href="#">2</a>
 										</li>
 										<li class="item-detail-pagination">
-											<a class="link-pagination link-detail-pagination" href="#">3</a>
+											<a class="link-pagination link-detail-pagination link-pagination-last" href="#">3</a>
 										</li>
 									</ul>
 								</li>
 								<li class="item-list-pagination button-paginate">
-									<a class="link-pagination link-paginate" href="#">Вперёд</a>
+									<a class="link-pagination link-paginate link-next" href="#">Вперёд</a>
 								</li>
 							</ul>
 						</section>			
@@ -333,7 +333,7 @@
 						<li class="item-list-user user-footer">
 							<a class="link-user-footer" href="#">
 								<svg class="icon-user-image" xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12"><path d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/></svg>
-								<span class="link-user-span">Валентин Петухов</span>
+								<span class="link-user-span link-user-span-name">Валентин Петухов</span>
 							</a>
 							<a class="link-footer-exit" href="#">Выйти</a>					
 						</li>
