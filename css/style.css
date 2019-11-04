@@ -541,6 +541,7 @@ img {
 
 .slides-block {
 	padding-top: 53px;
+	background: -o-linear-gradient(top, #f7e296 165px, #fff 165px);
 	background: linear-gradient(to bottom, #f7e296 165px, #fff 165px);
 }
 
@@ -906,6 +907,8 @@ img {
 	padding-bottom: 70px;
 
 	background: -o-linear-gradient(top, #fff 101px, #e5e5e5 101px, #fff);
+
+	background: -o-linear-gradient(top, #fff 101px, #e5e5e5 101px);
 
 	background: linear-gradient(180deg, #fff 101px, #e5e5e5 101px);
 }
@@ -1774,9 +1777,11 @@ img {
 	        flex-flow: row nowrap;
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
-	        justify-content: center;
+	        justify-content: flex-start;
 	width: 100%;
 	margin-top: 50px;
+
+	background-image: -o-linear-gradient(left,#dcdcdc 0,#dcdcdc 380px,#ebebeb 380px,#ebebeb 100%);
 
 	background-image: linear-gradient(to right,#dcdcdc 0,#dcdcdc 380px,#ebebeb 380px,#ebebeb 100%);
 
@@ -1879,7 +1884,9 @@ img {
 	        justify-content: space-between;
 	width: 40px;
 	margin-left: auto;
-	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	        transform: translateY(-50%);
 }
 
 .arrow-link-descen, 
@@ -1934,9 +1941,9 @@ img {
 .wrapper-catalog {
 	margin-top: 50px;
 
-	background: -webkit-gradient(linear, left top, right top, color-stop(50%, #eeeeee), color-stop(50%, #fff));
-
 	background: -o-linear-gradient(left, #eeeeee 50%, #fff 50%);
+
+	background: -webkit-gradient(linear, left top, right top, color-stop(50%, #eeeeee), color-stop(50%, #fff));
 
 	background: linear-gradient(90deg, #eeeeee 50%, #fff 50%);
 }
@@ -2023,6 +2030,8 @@ img {
 
 	background: -o-linear-gradient(to right, #91c92f 110px, #ccc 110px);
 
+	background: -o-linear-gradient(left, #91c92f 110px, #ccc 110px);
+
 	background: linear-gradient(to right, #91c92f 110px, #ccc 110px);
 }
 
@@ -2071,7 +2080,9 @@ img {
 }
 
 .range-circle:active {
-	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	    -ms-transform: scale(1.1);
+	        transform: scale(1.1);
 }
 
 .range-circle-min {
@@ -2248,6 +2259,7 @@ img {
 }
 
 .main-catalog {
+	width: 100%;
 	padding-left: 74px;
 	padding-top: 140px;
 	padding-bottom: 75px;
@@ -2417,6 +2429,8 @@ img {
 }
 
 .price-catalog {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	margin-left: auto;
 
@@ -2450,9 +2464,17 @@ img {
 	position: absolute;
 	top: 29px; right: 24px;
 	
+	display: -webkit-box;
+	
+	display: -ms-flexbox;
+	
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	width: 60px;
 	height: 60px;
 	
@@ -2519,7 +2541,9 @@ img {
 	-webkit-box-direction: normal;
 	    -ms-flex-flow: row nowrap;
 	        flex-flow: row nowrap;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	min-width: 100px;
 	margin: 0;
 	padding: 0;
@@ -2580,4 +2604,3 @@ img {
 .button-paginate:active .link-paginate {
 	opacity: .3;
 }
-
