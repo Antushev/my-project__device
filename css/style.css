@@ -177,7 +177,7 @@ img {
 /* index.html */
 
 .main-header {
-	margin-top: 20px;
+	margin-top: 21px;
 	padding-right: 60px;
 	padding-left: 60px;
 
@@ -1695,7 +1695,7 @@ img {
 }
 
 .main-header-catalog {
-	margin-top: 37px;
+	margin-top: 36px;
 }
 
 .main-header-h1 {
@@ -1863,7 +1863,7 @@ img {
 .item-links-block {
 	position: absolute;
 	right: -1px;
-	top: 50%;
+	top: 47%;
 
 	display: -webkit-box;
 
