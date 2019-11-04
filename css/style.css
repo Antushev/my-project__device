@@ -320,6 +320,14 @@ img {
 	border: none;
 }
 
+.search-input-form:hover {
+	opacity: .6;
+}
+
+.search-input-form:focus {
+	opacity: 1;
+}
+
 .search-input-form:focus + .button-search-form{
 	opacity: 1;
 }
@@ -632,7 +640,7 @@ img {
 
 .slide-header {
 	position: relative;
-	z-index: 1000;
+	z-index: 1;
 	
 	max-width: 400px;
 	margin: 0;
