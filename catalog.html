@@ -6,7 +6,7 @@
 		<title>Моноподы для селфи</title>
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap&subset=cyrillic" rel="stylesheet">
 		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/style.min.css">
+		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body class="inner-page">
 		<header class="main-header main-header-inner container">
@@ -22,10 +22,12 @@
 				<ul class="list-user">
 					<li class="list-user-item">
 						<div class="form-block-user">
-							<label class="visually-hidden" for="search-input" aria-label="Поиск по сайту">Поиск по сайту</label>
-							<input class="search-input-form" id="search-input" name="search" type="text" placeholder="Поиск по сайту" aria-label="Поиск по сайту">
-							<button class="button-search-form" type="submit">Найти</button>
-							<div class="form-line-bottom"></div>						
+							<form class="form-list-user" action="#" method="post">
+								<label class="visually-hidden" for="search-input" aria-label="Поиск по сайту">Поиск по сайту</label>
+								<input class="search-input-form" id="search-input" name="search" type="text" placeholder="Поиск по сайту" aria-label="Поиск по сайту">
+								<button class="button-search-form" type="submit">Найти</button>
+								<div class="form-line-bottom"></div>	
+							</form>					
 						</div> 
 					</li>
 					<li class="list-user-item">	
@@ -231,7 +233,10 @@
 						<ul class="list-catalog">
 							<li class="item-list-catalog">			
 								<img class="image-catalog" src="img/catalog-item-1.jpg" width="360" height="380" alt="Люительская селфи-палка" title="Любительская селфи-палка">
-								<a class="link-list-catalog" href="#">Любительская селфи-палка <span class="price-catalog">500 руб.</span></a>	
+								<div class="block-link-catalog">
+									<a class="link-list-catalog link-list-selfie" href="#">Любительская селфи-палка</a>
+									<span class="price-catalog price-selfie">500 руб.</span>	
+								</div>
 								<div class="item-hover-info">
 									<ul class="list-item-hover">
 										<li class="item-hover">
@@ -246,7 +251,10 @@
 
 							<li class="item-list-catalog">			
 								<img class="image-catalog" src="img/catalog-item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка" title="Профессиональная селфи-палка">
-								<a class="link-list-catalog" href="#"><span class="link-list-selfie">Профессиональная<br> селфи-палка</span><span class="price-catalog">1 500 руб.</span></a>
+								<div class="block-link-catalog">
+									<a class="link-list-catalog link-list-selfie selfie-prof" href="#">Профессиональная селфи-палка</a>
+									<span class="price-catalog price-selfie-prof">1 500 руб.</span>
+								</div>
 								<div class="item-hover-info">
 									<ul class="list-item-hover">
 										<li class="item-hover">
@@ -261,7 +269,10 @@
 
 							<li class="item-list-catalog">
 								<img class="image-catalog" src="img/catalog-item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка" title="Непотопялемая селфи-палка">
-								<a class="link-list-catalog link-list-unsinkable" href="#">Непотопляемая селфи-палка<span class="price-catalog">2 500 руб.</span></a>
+								<div class="block-link-catalog">
+									<a class="link-list-catalog link-list-unsinkable" href="#">Непотопляемая селфи-палка</a>
+									<span class="price-catalog price-unsinkable">2 500 руб.</span>
+								</div>
 								<div class="item-hover-info">
 									<ul class="list-item-hover">
 										<li class="item-hover">
@@ -276,7 +287,10 @@
 
 							<li class="item-list-catalog item-sticker-new">			
 								<img class="image-catalog" src="img/catalog-item-4.jpg" width="360" height="380" alt="Селфи-палка Следуй за мной" title="Селфи-палка Следуй за мной">
-								<a class="link-list-catalog link-list-me" href="#">Селфи-палка «‎Следуй за<br> мной»‎ <span class="price-catalog price-catalog-me">4 900 руб.</span></a>
+								<div class="block-link-catalog">
+									<a class="link-list-catalog link-list-me" href="#">Селфи-палка «‎Следуй за мной»‎</a>
+									<span class="price-catalog price-catalog-me">4 900 руб.</span>
+								</div>
 								<div class="item-hover-info">
 									<ul class="list-item-hover">
 										<li class="item-hover">
