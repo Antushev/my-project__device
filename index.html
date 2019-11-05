@@ -111,9 +111,7 @@
 		<main class="main-page">
 			<div class="wrapper-slider container">
 				<section class="slides-block">					
-					<input class="slider-radio-paginate slide-1" id="slide-1" type="radio" name="slide" checked>	
-					<input class="slider-radio-paginate slide-2" id="slide-2" type="radio" name="slide">
-					<input class="slider-radio-paginate slide-3" id="slide-3" type="radio" name="slide">
+					<input class="slider-radio-paginate slide-1" id="slide-1" type="radio" name="slide" checked>
 					<section class="slide slide-block-1">
 						<div class="wrapper-block-slider block-img">
 							<img src="img/slider-1.png" width="384" height="486" alt="Палка для селфи">
@@ -123,7 +121,14 @@
 
 							<p class="slide-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
 
-							<a href="#" class="button slide-button">Подробнее</a>
+							<div class="block-buttons-slide">
+								<a href="#" class="button slide-button">Подробнее</a>
+								<div class="list-button-slider">											
+									<label class="slider-button-paginate" for="slide-1" aria-label="Переключиться на первый слайд"></label>										
+									<label class="slider-button-paginate" for="slide-2" aria-label="Переключиться на второй слайд"></label>						
+									<label class="slider-button-paginate" for="slide-3" aria-label="Переключиться на третий слайд"></label>
+								</div>	
+							</div>	
 
 							<ul class="list-slide">
 								<li class="item-list-slide"><span class="list-slide-span">8,5 м</span> Длина палки</li>
@@ -133,7 +138,8 @@
 						</div>
 					</section>
 					
-					<section class="slide slide-block-2">
+					<input class="slider-radio-paginate slide-2" id="slide-2" type="radio" name="slide">
+					<section class="slide slide-block-2">						
 						<div class="wrapper-block-slider block-img">
 							<img src="img/slider-2.png" width="350" height="500" alt="Фитнес-браслет">
 						</div>
@@ -143,7 +149,14 @@
 
 							<p class="slide-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
 
-							<a href="#" class="button slide-button">Подробнее</a>
+							<div class="block-buttons-slide">
+								<a href="#" class="button slide-button">Подробнее</a>
+								<div class="list-button-slider">											
+									<label class="slider-button-paginate" for="slide-1" aria-label="Переключиться на первый слайд"></label>										
+									<label class="slider-button-paginate" for="slide-2" aria-label="Переключиться на второй слайд"></label>						
+									<label class="slider-button-paginate" for="slide-3" aria-label="Переключиться на третий слайд"></label>
+								</div>	
+							</div>	
 
 							<ul class="list-slide">
 								<li class="item-list-slide"><span class="list-slide-span">48 часов</span> Без подзарядки</li>
@@ -151,30 +164,32 @@
 						</div>
 					</section>
 
+					<input class="slider-radio-paginate slide-3" id="slide-3" type="radio" name="slide">
 					<section class="slide slide-block-3">
 						<div class="wrapper-block-slider block-img">
 							<img src="img/slider-3.png" width="540" height="320" alt="Квадрокоптер Device">
 						</div>
 						
 						<div class="wrapper-block-slider wrapper-text-slider wrapper-text-slider-3">
-							<h2 class="main-header-2 slide-header">Пархает как как бабочка, жалит как пчела!</h2>
+							<h2 class="main-header-2 slide-header slide-header-quadrocopter">Пархает как бабочка, жалит как пчела!</h2>
 
 							<p class="slide-text">Это обычный, на первый взгляд квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
 
-							<a href="#" class="button slide-button">Подробнее</a>
+							<div class="block-buttons-slide">
+								<a href="#" class="button slide-button">Подробнее</a>
+								<div class="list-button-slider">											
+									<label class="slider-button-paginate" for="slide-1" aria-label="Переключиться на первый слайд"></label>										
+									<label class="slider-button-paginate" for="slide-2" aria-label="Переключиться на второй слайд"></label>						
+									<label class="slider-button-paginate" for="slide-3" aria-label="Переключиться на третий слайд"></label>
+								</div>	
+							</div>	
 
 							<ul class="list-slide">
 								<li class="item-list-slide"><span class="list-slide-span">800 м</span> Дальность полета</li>
 								<li class="item-list-slide"><span class="list-slide-span">50 м</span> Радиус поражения</li>
 							</ul>
 						</div>
-					</section>
-
-					<div class="list-button-slider">											
-						<label class="slider-button-paginate" for="slide-1" aria-label="Переключиться на первый слайд"></label>										
-						<label class="slider-button-paginate" for="slide-2" aria-label="Переключиться на второй слайд"></label>						
-						<label class="slider-button-paginate" for="slide-3" aria-label="Переключиться на третий слайд"></label>
-					</div>					
+					</section>								
 				</section>
 			</div>
 			<section class="main-popular container">
